@@ -36,11 +36,18 @@ It provides RESTful API endpoints for user authentication, article generation, a
 
 ## Environment Variables
 
-Create a `.env` file for environment-specific configuration. The backend requires the following environment variables for Supabase authentication:
+Create a `.env` file for environment-specific configuration.  
+The backend requires the following variables:
 
+- For Supabase authentication:
 ```
 SUPABASE_URL=https://albbopgnyqrzwvbcejjx.supabase.co
 SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFsYmJvcGdueXFyend2YmNlamp4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE1MTg5MjEsImV4cCI6MjA2NzA5NDkyMX0.HToAUbDOADMJey4wFqiT6qPweZs9UpVek62n7IQgNA0
+```
+
+- For OpenAI integration (required for article generation):
+```
+OPENAI_API_KEY=sk-...YOUR_OPENAI_KEY...
 ```
 
 ## API Endpoints (planned)

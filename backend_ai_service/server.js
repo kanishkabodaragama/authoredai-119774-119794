@@ -6,11 +6,10 @@ const PORT = process.env.PORT || 5001;
 // Middleware example (will load middleware from ./middleware in future)
 app.use(express.json());
 
-// Route wiring (actual implementations to be added)
 const fs = require("fs");
 const path = require("path");
 
-// Dynamically mount all routes in routes/ folder if any in future
+// Dynamically mount all routes in routes/ folder, including 'article.js'
 const routesPath = path.join(__dirname, "routes");
 if (fs.existsSync(routesPath)) {
   fs.readdirSync(routesPath).forEach((file) => {
